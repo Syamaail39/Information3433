@@ -1,0 +1,118 @@
+################################
+######     User Login     ######    
+################################
+POST http://localhost:3000/user-login
+Content-Type: application/json
+
+{
+    "Username": "abu",
+    "Password": "123"
+}
+
+###################################
+######     User Register     ######    
+###################################
+POST http://localhost:3000/register-user
+Content-Type: application/json
+
+{
+    "Username": "abu",
+    "Password": "123",
+    "name": "aahh",
+    "email": "aahh@gmail.com"
+}
+
+####################################
+######     Admin Register     ######    
+####################################
+POST http://localhost:3000/register-admin
+Content-Type: application/json
+
+{
+    "Username": "admin",
+    "Password": "admin123",
+    "name": "Admin User",
+    "email": "admin@example.com"
+}
+
+#################################
+######     Admin Login     ######    
+#################################
+POST http://localhost:3000/login-admin
+Content-Type: application/json
+
+{
+    "Username": "admin",
+    "Password": "admin123"
+}
+
+##################################
+######     Create Visit     ######    
+##################################
+POST http://localhost:3000/create-visit
+Content-Type: application/json
+
+{
+    "visitorName": "John Doe",
+    "gender": "Male",
+    "citizenship": "USA",
+    "visitorAddress": "123 Main St",
+    "phoneNo": "123-456-7890",
+    "vehicleNo": "ABC123",
+    "hostId": "5ffac8e3f7c1890c4af33929",
+    "visitDate": "2023-12-27",
+    "place": "Office",
+    "purpose": "Meeting"
+}
+
+##################################
+######     Update Visit     ######    
+##################################
+PATCH http://localhost:3000/update-visit/5ffac8e3f7c1890c4af33929
+Content-Type: application/json
+
+{
+  "visitorName": "Updated John Doe",
+  "gender": "Male",
+  "citizenship": "USA",
+  "visitorAddress": "123 Main St",
+  "phoneNo": "123-456-7890",
+  "vehicleNo": "ABC123",
+  "hostId": "5ffac8e3f7c1890c4af33929",
+  "visitDate": "2023-12-27",
+  "place": "Office",
+  "purpose": "Updated Meeting"
+}
+
+#######################################
+######     Delete Visit     ######    
+#######################################
+DELETE http://localhost:3000/delete-visit/5ffac8e3f7c1890c4af33929
+Content-Type: application/json
+
+#######################################
+######     Get Visit Details     ######    
+#######################################
+GET http://localhost:3000/visit-details
+Content-Type: application/json
+
+#######################################
+POST http://localhost:3000/register-security
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "id": "SG001",
+    "workshift": "Day",
+    "duration": "08:00",
+    "date": "23-06-23"
+}
+
+####################
+POST http://localhost:3000/login-security
+Content-Type: application/json
+
+{
+    "id": "SG001",
+    "name": "John Doe"
+}
