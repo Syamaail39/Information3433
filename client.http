@@ -47,22 +47,18 @@ Content-Type: application/json
 }
 
 ##################################
-######     Create Visit     ######    
+######     Create Rental     ######    
 ##################################
-POST http://localhost:3000/create-visit
+POST http://localhost:3000/create-rental
 Content-Type: application/json
 
 {
-    "visitorName": "John Doe",
-    "gender": "Male",
-    "citizenship": "USA",
-    "visitorAddress": "123 Main St",
-    "phoneNo": "123-456-7890",
-    "vehicleNo": "ABC123",
-    "hostId": "5ffac8e3f7c1890c4af33929",
-    "visitDate": "2023-12-27",
-    "place": "Office",
-    "purpose": "Meeting"
+  "rentalName": "jat",
+  "gender": "Male",
+  "customerId": "01",
+  "rentalDate": "2023-01-01",
+  "phoneNo": "01234567890",
+  "carType": "lambo"
 }
 
 ##################################
@@ -72,23 +68,21 @@ PATCH http://localhost:3000/update-visit/5ffac8e3f7c1890c4af33929
 Content-Type: application/json
 
 {
-  "visitorName": "Updated John Doe",
-  "gender": "Male",
-  "citizenship": "USA",
-  "visitorAddress": "123 Main St",
-  "phoneNo": "123-456-7890",
-  "vehicleNo": "ABC123",
-  "hostId": "5ffac8e3f7c1890c4af33929",
-  "visitDate": "2023-12-27",
-  "place": "Office",
-  "purpose": "Updated Meeting"
+  "rentalName": "John Doe",
+    "gender": "Male",
+    "phoneNo": "USA",
+    "carType": "123 Main St",
+    "customerId": "123-456-7890",
+    "rentalDate": "ABC123",
 }
 
 #######################################
-######     Delete Visit     ######    
+######     Delete Rental     ######    
 #######################################
-DELETE http://localhost:3000/delete-visit/5ffac8e3f7c1890c4af33929
-Content-Type: application/json
+DELETE http://localhost:3000/delete-rental/jat
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ1MzI3OTUsImV4cCI6MTcwNDUzNjM5NX0.SUi5swAB8l7QT6_vU7lmUVnmIYyiAnHbVqThcMPw9Lo
+
+
 
 #######################################
 ######     Get Visit Details     ######    

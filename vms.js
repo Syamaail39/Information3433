@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 //const port = 3000;
 const port = process.env.PORT || 3000;
+const Mongo= process.env.MONGODB_URI;
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const swaggerJsdoc = require('swagger-jsdoc');
