@@ -10,7 +10,7 @@ const swaggerUi = require('swagger-ui-express');
 const { MongoClient, ObjectId } = require('mongodb');
 
 app.use(express.json());
-app.use(cors()); // Enable CORS for all routes
+app.use(cors()); // 
 
 const uri = 'mongodb+srv://syamaailsolehin:solehin46@syamaail.oiyntni.mongodb.net/?retryWrites=true&w=majority';
 
