@@ -59,4 +59,4 @@ jobs:
           app-name: 'CarRental12'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2A8858491334B4ABDC802702D0A20B6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C63A0655EB9A452AAAEE2B73BB7F86A3 }}
