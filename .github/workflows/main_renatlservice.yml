@@ -59,4 +59,4 @@ jobs:
           app-name: 'RenatlService'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7CFB7410839E4BBDA1702B9D374E3517 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81C8E31B7A4D40FF9B33EBBBC1DFA1BA }}
