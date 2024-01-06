@@ -11,6 +11,7 @@
     "mongodb": "^6.3.0",
     "node": "^21.2.0",
     "node.js": "^0.0.1-security",
+    "nodejs": "^0.0.0",
     "nodemon": "^3.0.2",
     "supertest": "^6.3.3",
     "swagger": "^0.7.5",

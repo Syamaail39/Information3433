@@ -12,7 +12,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 
-const uri = 'mongodb+srv://syamaail:syamaail123@syamaail.yb22dtg.mongodb.net/CarRental';
+const uri = 'mongodb+srv://syamaailsolehin:solehin46@syamaail.oiyntni.mongodb.net/?retryWrites=true&w=majority';
 
 
 const options = {

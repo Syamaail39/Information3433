@@ -82,8 +82,6 @@ Content-Type: application/json
 DELETE http://localhost:3000/delete-rental/jat
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ1MzI3OTUsImV4cCI6MTcwNDUzNjM5NX0.SUi5swAB8l7QT6_vU7lmUVnmIYyiAnHbVqThcMPw9Lo
 
-
-
 #######################################
 ######     Get Visit Details     ######    
 #######################################
