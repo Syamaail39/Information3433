@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "chalk": "^5.3.0"
-  }
+  },
+  "name": "vms-v2",
+  "version": "1.0.0",
+  "main": "swagger.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "vms.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syamaail39/CarRental.git"
+  },
+  "author": "mael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syamaail39/CarRental/issues"
+  },
+  "homepage": "https://github.com/Syamaail39/CarRental#readme",
+  "description": ""
 }
