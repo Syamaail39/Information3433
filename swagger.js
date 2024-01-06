@@ -220,7 +220,7 @@
  *         content:
  *           application/json:
  *             example:
- *               - rentalName: Rental1
+ *               - rentalName: Rental
  *                 gender: Male
  *                 phoneNo: 1234567890
  *                 carType: Sedan
