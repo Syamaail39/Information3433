@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+//const port = 3000;
+const port = process.env.PORT || 3000;
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const swaggerJsdoc = require('swagger-jsdoc');
@@ -152,7 +153,8 @@ app.delete('/delete-rental/:rentalName', verifyToken, async (req, res) => {
   }
 });
 /////////////////////////////////////////////////////////////////////////////////////////////
-//CAR DETAIL/////////
+//CAR DETAIL//
+//created
 app.post('/create-car', verifyToken, async (req, res) => {
   try {
     // Check if the user making the request is an admin
@@ -184,6 +186,39 @@ app.post('/create-car', verifyToken, async (req, res) => {
   } catch (error) {
     console.error('Error creating car:', error);
     res.status(500).send('An error occurred while creating the car');
+  }
+});
+
+//deleted
+app.delete('/delete-car/:carName', verifyToken, async (req, res) => {
+  try {
+    // Check if the user making the request is an admin
+    if (!req.user || !req.user.isAdmin) {
+      res.status(403).send('Only admin users are allowed to delete cars.');
+      return;
+    }
+
+    const carName = req.params.carName;
+
+    // Check if carName is provided
+    if (!carName) {
+      res.status(400).send('Missing carName parameter for deletion');
+      return;
+    }
+
+    // Use findOneAndDelete to delete the car
+    const result = await carDetailCollection.findOneAndDelete({ carName });
+
+    if (!result.value) {
+      // No matching document found
+      res.status(404).send('Car not found for deletion');
+      return;
+    }
+
+    res.send('Car deleted successfully');
+  } catch (error) {
+    console.error('Error deleting car:', error);
+    res.status(500).send('An error occurred while deleting the car');
   }
 });
 
