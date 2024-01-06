@@ -7,7 +7,7 @@
   "main": "swagger.js",
   "devDependencies": {},
   "scripts": {
-    "test": "vms.js"
+    "test": "node vms.js"
   },
   "repository": {
     "type": "git",
