@@ -20,9 +20,9 @@
   },
   "name": "vms-v2",
   "version": "1.0.0",
-  "main": "swagger.js",
+  "main": "vms.js",
   "scripts": {
-    "test": "node vms.js"
+    "start": "node vms.js"
   },
   "repository": {
     "type": "git",
